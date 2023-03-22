@@ -8,16 +8,18 @@
 
 int main(void)
 {
-	int a = 0;
-	long b = 1, c = 2, sum = c;
+	long int a = 1, b = 2, c = 0, sum = 2;
 
-	while (c + b < 4000000)
+	while (c <= 4000000)
 	{
-		c += b;
-		if (c % 2 == 0)
-			sum += c;
-		++a;
+	c = a + b;
+	if (c % 2 == 0)
+	sum += c;
+	a = b;
+	b = c;
 	}
+
 	printf("%ld\n", sum);
+
 	return (0);
 }
