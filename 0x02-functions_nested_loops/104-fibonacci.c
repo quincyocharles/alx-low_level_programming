@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	unsigned long long a = 1, b = 1, c;
+	unsigned long int a = 1, b = 1, c;
 	int i;
 
 	printf("%llu, %llu, ", a, b);
