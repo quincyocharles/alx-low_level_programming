@@ -9,19 +9,12 @@
  */
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
-	{
-	if (*s == c)
-	{
-	return (s);
-	}
-	s++;
-	}
+	int r = 0;
 
-	if (*s == c)
+	for (; s[r] >= '\0'; r++)
 	{
-	return (s);
+	if (s[r] == c)
+	return (&s[r]);
 	}
-
-	return (NULL);
+	return (0);
 }
