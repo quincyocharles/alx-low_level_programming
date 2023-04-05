@@ -9,6 +9,9 @@ int is_palindrome(char *s)
 {
 	int length = 0;
 
+	if (*s == '\0')
+	return (1);
+
 	while (*(s + length))
 	length++;
 
@@ -17,7 +20,6 @@ int is_palindrome(char *s)
 
 /**
  * check_palindrome - helper function for is_palindrome
- *
  * @s: pointer to the string to check
  * @start: starting index to check
  * @end: ending index to check
