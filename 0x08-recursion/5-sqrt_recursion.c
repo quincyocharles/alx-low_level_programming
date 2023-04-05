@@ -26,7 +26,7 @@ int _sqrt_recursion(int n)
  */
 int find_sqrt(int start, int end, int n)
 {
-	int mid;
+	long mid;
 
 	if (end >= start)
 	{
