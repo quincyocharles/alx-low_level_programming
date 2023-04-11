@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	/* Allocate memory for the string */
-	str = malloc(sizeof(char) * total_len);
+	str = malloc(sizeof(char) * (total_len + 1));
 	if (str == NULL)
 	return (NULL);
 
