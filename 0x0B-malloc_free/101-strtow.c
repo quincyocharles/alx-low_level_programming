@@ -66,7 +66,7 @@ char **strtow(char *str)
 	}
 	for (; j < k; j++)
 	matrix[i][j - k - 1] = str[j];
-	matrix[i][j - k - 1] = '\0';
+	matrix[i][j - k + 1] = '\0';
 	}
 
 	matrix[words] = NULL;
