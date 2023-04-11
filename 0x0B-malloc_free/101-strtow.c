@@ -65,8 +65,8 @@ char **strtow(char *str)
 	return (NULL);
 	}
 	for (; j < k; j++)
-	matrix[i][j - k] = str[j];
-	matrix[i][j - k] = '\0';
+	matrix[i][j - k - 1] = str[j];
+	matrix[i][j - k - 1] = '\0';
 	}
 
 	matrix[i] = NULL;
