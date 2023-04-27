@@ -1,12 +1,9 @@
 global    main
-extern    printf
-
+          extern    printf
 main:
-    push message
-    push dword format
-    call printf
-    add esp, 8
-    ret
-
-format:
-    db "%s", 10, 0
+	  mov   edi, format
+	  xor   eax, eax
+	  call  printf
+	  mov 	eax, 0
+	  ret
+format: db `Hello, Holberton\n`,0
